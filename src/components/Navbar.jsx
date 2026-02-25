@@ -12,7 +12,7 @@ export default function Navbar() {
   return (
     <header
       className="
-        sticky top-4 z-50 mx-4
+        sticky top-0 z-50 mx-4
         rounded-3xl
         bg-white/80 dark:bg-gray-900/80
         backdrop-blur-lg
