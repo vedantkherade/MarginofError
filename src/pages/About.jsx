@@ -23,7 +23,7 @@ export default function About() {
         <div className="max-w-6xl mx-auto px-6">
           <div className="bg-white dark:bg-gray-700 rounded-3xl shadow-2xl p-10 md:p-16 grid md:grid-cols-2 gap-16 items-center">
             {/* TEXT SIDE */}
-            <div className="animate-slideLeft opacity-0">
+            <div className="animate-slideLeft ">
               <h2 className="text-4xl md:text-5xl font-bold mb-6 text-[#0f172a] dark:text-white">
                 Our Story
               </h2>
