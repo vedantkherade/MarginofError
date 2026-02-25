@@ -1,0 +1,98 @@
+@import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
+
+/* Root theme variables (light by default, overridden when html.dark is present) */
+:root {
+  --page-bg: #fdf7ee;
+  --page-text: #0f172a;
+  --muted: #475569;
+  --accent: #f4b400;
+}
+
+html.dark {
+  --page-bg: #0f1724; /* dark page background */
+  --page-text: #e6eef6; /* light text */
+  --muted: #9aa6b2;
+  --accent: #f4b400;
+}
+
+/* Apply root theme to the document base so components inherit it by default */
+html, body, #root {
+  height: 100%;
+  background-color: var(--page-bg);
+  color: var(--page-text);
+  transition: background-color 200ms ease, color 200ms ease;
+}
+
+@layer utilities {
+  .animate-fadeIn {
+    animation: fadeIn 1s ease forwards;
+  }
+
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+}
+
+/* Hero background utility with a dark-mode counterpart */
+@layer utilities {
+  .bg-hero {
+    background: linear-gradient(135deg, var(--page-bg) 0%, rgba(255,255,255,0.6) 60%);
+  }
+
+  /* When the html element has the `dark` class the variables above change,
+     but for a stronger hero background provide a darker gradient too */
+  html.dark .bg-hero {
+    background: linear-gradient(135deg, #0f1724 0%, #0b1220 60%);
+  }
+}
+
+@layer utilities {
+  .animate-fadeUp {
+    animation: fadeUp 0.8s ease forwards;
+  }
+
+  @keyframes fadeUp {
+    from {
+      opacity: 0;
+      transform: translateY(40px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+}
+
+@layer utilities {
+  .animate-slideLeft {
+    animation: slideLeft 0.9s ease forwards;
+  }
+
+  .animate-slideRight {
+    animation: slideRight 0.9s ease forwards;
+  }
+
+  @keyframes slideLeft {
+    from {
+      opacity: 0;
+      transform: translateX(-80px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+
+  @keyframes slideRight {
+    from {
+      opacity: 0;
+      transform: translateX(80px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+}
