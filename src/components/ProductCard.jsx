@@ -46,7 +46,7 @@ const ProductCard = ({ product, onSelect }) => {
               animate={{ opacity: 1, y: 0 }}
               exit={{ opacity: 0, y: -6 }}
               transition={{ duration: 0.3 }}
-              className="w-full h-full object-cover"
+              className="w-full h-full object-cover object-top"
             />
           </AnimatePresence>
 
