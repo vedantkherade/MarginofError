@@ -2,44 +2,41 @@ import { Link } from "react-router-dom";
 import ThemeToggle from "../components/ThemeToggle";
 export default function About() {
   return (
-    <div className="pt-24 bg-white text-[#0f172a]">
+    <div className="pt-24 bg-white dark:bg-gray-900 text-[#0f172a] dark:text-gray-100">
       {/* HERO SECTION */}
       <section className="max-w-5xl mx-auto px-6 py-24 text-center">
-        <h1 className="text-[50px] md:text-[80px] font-black leading-tight">
+        <h1 className="text-[50px] md:text-[80px] font-black leading-tight dark:text-white">
           Crafted for the
           <br />
           Modern Minimalist.
         </h1>
 
-        <p className="mt-8 text-lg text-[#475569] max-w-2xl mx-auto">
-          Threadvault is built on simplicity, precision, and timeless design. We
+        <p className="mt-8 text-lg text-[#475569] dark:text-gray-400 max-w-2xl mx-auto">
+          WearX is built on simplicity, precision, and timeless design. We
           create essentials that elevate your everyday presence.
         </p>
 
-        <div className="mt-8 flex justify-center">
-          <ThemeToggle />
-        </div>
       </section>
 
       {/* PHILOSOPHY SECTION */}
-      <section className="bg-[#f5f2eb] py-32">
+      <section className="bg-[#f5f2eb] dark:bg-gray-800 py-32">
         <div className="max-w-6xl mx-auto px-6">
-          <div className="bg-white rounded-3xl shadow-2xl p-10 md:p-16 grid md:grid-cols-2 gap-16 items-center">
+          <div className="bg-white dark:bg-gray-700 rounded-3xl shadow-2xl p-10 md:p-16 grid md:grid-cols-2 gap-16 items-center">
             {/* TEXT SIDE */}
             <div className="animate-slideLeft opacity-0">
-              <h2 className="text-4xl md:text-5xl font-bold mb-6 text-[#0f172a]">
+              <h2 className="text-4xl md:text-5xl font-bold mb-6 text-[#0f172a] dark:text-white">
                 Our Story
               </h2>
 
               <div className="w-16 h-1 bg-[#f4b400] mb-8"></div>
 
-              <p className="text-[#475569] leading-8 mb-6">
+              <p className="text-[#475569] dark:text-gray-300 leading-8 mb-6">
                 What started as a simple idea turned into a pursuit of
                 perfection. We wanted clothing that felt refined yet effortless
                 — something that speaks without trying too hard.
               </p>
 
-              <p className="text-[#475569] leading-8">
+              <p className="text-[#475569] dark:text-gray-300 leading-8">
                 Every piece is designed with restraint and precision. We focus
                 on structure, silhouette, and fabric integrity — creating
                 garments that move naturally and age beautifully.
@@ -60,10 +57,10 @@ export default function About() {
         </div>
       </section>
 
-      <section className="bg-[#f8f7f4] py-24">
+      <section className="bg-[#f8f7f4] dark:bg-gray-900 py-24">
         <div className="max-w-6xl mx-auto px-6 grid md:grid-cols-3 gap-10">
           {/* Premium Fabric */}
-          <div className="bg-white rounded-3xl shadow-lg hover:shadow-2xl transition duration-500 hover:-translate-y-3 group overflow-hidden">
+          <div className="bg-white dark:bg-gray-800 rounded-3xl shadow-lg hover:shadow-2xl transition duration-500 hover:-translate-y-3 group overflow-hidden">
             <div className="overflow-hidden">
               <img
                 src="/fabric.jpg"
@@ -73,17 +70,17 @@ export default function About() {
             </div>
 
             <div className="p-8 text-center">
-              <h3 className="text-xl font-semibold mb-4 text-[#0f172a]">
+              <h3 className="text-xl font-semibold mb-4 text-[#0f172a] dark:text-white">
                 Premium Fabric
               </h3>
-              <p className="text-[#475569]">
+              <p className="text-[#475569] dark:text-gray-300">
                 We source materials that feel exceptional and age beautifully.
               </p>
             </div>
           </div>
 
           {/* Timeless Design */}
-          <div className="bg-white rounded-3xl shadow-lg hover:shadow-2xl transition duration-500 hover:-translate-y-3 group overflow-hidden">
+          <div className="bg-white dark:bg-gray-800 rounded-3xl shadow-lg hover:shadow-2xl transition duration-500 hover:-translate-y-3 group overflow-hidden">
             <div className="overflow-hidden">
               <img
                 src="/design.jpg"
@@ -93,17 +90,17 @@ export default function About() {
             </div>
 
             <div className="p-8 text-center">
-              <h3 className="text-xl font-semibold mb-4 text-[#0f172a]">
+              <h3 className="text-xl font-semibold mb-4 text-[#0f172a] dark:text-white">
                 Timeless Design
               </h3>
-              <p className="text-[#475569]">
+              <p className="text-[#475569] dark:text-gray-300">
                 Trends fade. Precision silhouettes remain.
               </p>
             </div>
           </div>
 
           {/* Modern Fit */}
-          <div className="bg-white rounded-3xl shadow-lg hover:shadow-2xl transition duration-500 hover:-translate-y-3 group overflow-hidden">
+          <div className="bg-white dark:bg-gray-800 rounded-3xl shadow-lg hover:shadow-2xl transition duration-500 hover:-translate-y-3 group overflow-hidden">
             <div className="overflow-hidden">
               <img
                 src="/fit.jpg"
@@ -113,10 +110,10 @@ export default function About() {
             </div>
 
             <div className="p-8 text-center">
-              <h3 className="text-xl font-semibold mb-4 text-[#0f172a]">
+              <h3 className="text-xl font-semibold mb-4 text-[#0f172a] dark:text-white">
                 Modern Fit
               </h3>
-              <p className="text-[#475569]">
+              <p className="text-[#475569] dark:text-gray-300">
                 Tailored to complement movement and structure.
               </p>
             </div>
